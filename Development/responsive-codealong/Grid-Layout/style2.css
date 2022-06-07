@@ -1,0 +1,18 @@
+.Grid > div{
+    background:rgb(45, 138, 167);
+    padding: 1em;
+
+     
+}
+
+.Grid > div:nth-child(odd) {
+    background: rgb(167, 36, 36);
+
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}

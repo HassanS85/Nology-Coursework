@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        color: #333;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        gap: 25px 50px;
+      }
+
+      .quote {
+        background-color: gold;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fetch</h1>
+      <button id="get-dog-button">Random Dog Image</button>
+      <button id="randomDogImages">5 random dog images</button>
+    </header>
+    <main>
+      <section class="grid" id="dog-container"></section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

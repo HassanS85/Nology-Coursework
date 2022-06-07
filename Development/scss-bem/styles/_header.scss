@@ -1,0 +1,21 @@
+@use "./variable" as *;
+@use "./mixins" as *;
+
+header {
+    height: 20vh;
+    background-color: $primary-color;
+    display: flex;
+    @include flexCenter();
+}
+
+button {
+    font-family: $primary-font;
+    height: 50px;
+    width: 100px;
+    background-color: $secondary-color;
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+
