@@ -3,14 +3,9 @@ import "./Button.scss"
 
 
 const Button = (props) => {
-    const {text} = props;
-    const [counter, setCounter] = useState(0)
-
-
+    
     return (
-        <div>
-            <button className='button'>{text}</button>
-            Button</div>
+    <button>Button Test</button>
     )
 }
 

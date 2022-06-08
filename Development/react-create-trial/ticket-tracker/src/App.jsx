@@ -1,14 +1,14 @@
 
-// import "./App.scss";
-// import team from "./assets/data/data.js";
-// import TicketContainer from "./components/TicketContainer/TicketContainer";
+import "./App.scss";
+import data from "../src/data/data";
+import TicketContainer from "./components/TicketContainer/TicketContainer";
 
 const App = () => {
 
-
-
-
   
+
+
+
   return (
     <>
       <div className="ticket">
@@ -16,7 +16,7 @@ const App = () => {
           <h1 className="ticket__heading">Ticket Tracker</h1>
         </header>
         <section>
-          <TicketContainer team={team} />
+          <TicketContainer team={data} />
         </section>
       </div>
     </>
