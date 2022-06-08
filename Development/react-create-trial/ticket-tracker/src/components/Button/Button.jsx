@@ -16,10 +16,10 @@ const Button = () => {
         <div className="Button-tile">
             <h2 className='Button-tile__heading'>Counter</h2>
             <div className="Button-tile__display">{counter}</div>
-            <button className='Button-tile__icon__plus' onClick={handleIncrement}
+            <button className='Button-tile__icon__plusOne' onClick={handleIncrement}
             >+1</button>
 
-            <button className='Button-tile__icon__minus' onClick={handleDecrement}
+            <button className='Button-tile__icon__minusOne' onClick={handleDecrement}
             >-1</button>
         </div>
     )

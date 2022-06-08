@@ -1,41 +1,18 @@
-import React, {useState} from 'react'
-import "../TicketContainer/TicketContainer.scss"
+import SubTicket from "../SubTicket/SubTicket";
+import "./TicketContainer.scss"
 
 
+const TicketContainer = ({team}) => {   
+// function to make a tile for each of the 10 employees from the dataset.
 
+    const personEach = team.map((person) => {
+        return <SubTicket name={person.name} role={person.role} />
 
-const TicketContainer = (props) => {
+    });
+
+        return <div className="ticket-container">{personEach}</div>
     
-
-
-        const {team} = props;
-        const [ticketCounter, setTicketCounter] = useState(0)
-    
-        
-        const handleIncrement = () => {
-            if(ticketCounter === team.length -1){
-                setTicketCounter(0)
-            } else {
-                setTicketCounter(ticketCounter + 1)
-            }
-            
-        }
-    
-        const handleDecrement = () => {
-            setTicketCounter(ticketCounter - 1)
-        }
-        return (
-            <>
-            <p>{ticketCounter}</p>
-            <div className="ticketAmount" onClick={handleIncrement}>TicketContainer</div>
-            <div className="ticketAmount" onClick={handleDecrement}>TicketContainer</div>
-            <div src={team[ticketCounter]} className="ticket" alt = ""></div>
-            </>
-        )
     }
-
-
-    
 
 
 export default TicketContainer

@@ -1,6 +1,6 @@
 @use "../../assets/sass/variables" as *;
 
-.ticketContainer {
+.ticket-container {
     //display purposes
     display: grid;
     gap: 25px 125px;
@@ -8,3 +8,6 @@
     margin: 1rem;
     justify-content: center; 
 }
+
+
+
