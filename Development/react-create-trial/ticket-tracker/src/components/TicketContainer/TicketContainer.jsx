@@ -3,8 +3,11 @@ import "../TicketContainer/TicketContainer.scss"
 
 
 
+
 const TicketContainer = (props) => {
     
+
+
         const {team} = props;
         const [ticketCounter, setTicketCounter] = useState(0)
     
@@ -22,11 +25,15 @@ const TicketContainer = (props) => {
             setTicketCounter(ticketCounter - 1)
         }
         return (
+            <>
             <p>{ticketCounter}</p>
-          <div className="" onClick={handleIncrement} 
-          >TicketContainer</div>
+            <div className="ticketAmount" onClick={handleIncrement}>TicketContainer</div>
+            <div className="ticketAmount" onClick={handleDecrement}>TicketContainer</div>
+            <div src={team[ticketCounter]} className="ticket" alt = ""></div>
+            </>
         )
     }
+
 
     
 

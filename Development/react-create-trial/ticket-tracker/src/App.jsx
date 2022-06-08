@@ -2,6 +2,11 @@
 import "./App.scss";
 import data from "../src/data/data";
 import TicketContainer from "./components/TicketContainer/TicketContainer";
+import Ticket from "./components/Button/Ticket/Ticket";
+import Button from "./components/Button/Button";
+
+
+
 
 const App = () => {
 

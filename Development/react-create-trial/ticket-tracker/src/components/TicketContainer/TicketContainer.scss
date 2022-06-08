@@ -1,0 +1,10 @@
+@use "../../assets/sass/variables" as *;
+
+.ticketContainer {
+    //display purposes
+    display: grid;
+    gap: 25px 125px;
+    grid-template-columns: repeat(5,1fr);
+    margin: 1rem;
+    justify-content: center; 
+}
