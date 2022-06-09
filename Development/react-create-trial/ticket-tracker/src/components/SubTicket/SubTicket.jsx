@@ -4,7 +4,8 @@ import  Button from "../Button/Button.jsx";
 const SubTicket = ({name, role}) => {
     return (
         <div className="subTicket-tile">
-            {name}{role}
+            <p>{name}</p>
+            <p>{role}</p>
             <div className="subTicket-button">
                 <Button />
 

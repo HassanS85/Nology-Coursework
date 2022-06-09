@@ -14,7 +14,7 @@ const Button = () => {
     }
     return (
         <div className="Button-tile">
-            <h2 className='Button-tile__heading'>Counter</h2>
+            <h2 className='Button-tile__heading'>Tickets Assigned</h2>
             <div className="Button-tile__display">{counter}</div>
             <button className='Button-tile__icon__plusOne' onClick={handleIncrement}
             >+1</button>
